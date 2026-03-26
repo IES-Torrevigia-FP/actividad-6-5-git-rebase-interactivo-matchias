@@ -1,0 +1,55 @@
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git rebase -i HEAD~3
+error: no se puede analizar '3e0f168dfd'
+error: línea inválida 1: pick 3e0f168dfd Commit 1: versión inicial
+error: no se puede analizar '3b346deadas'
+error: línea inválida 2: pick 3b346deadas Agrupa cambios de líneas extra en app
+error: no se puede analizar '610823adas'
+error: línea inválida 3: pick 610823adas o
+Se puede arreglar esto con 'git rebase --edit-todo' y después ejecuta 'git rebase --continue'.
+O se puede abortar el rebase con 'git rebase --abort'.
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git rebase --abort 
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git status 
+En la rama main
+Tu rama está adelantada a 'origin/main' por 3 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        cp1-historial-original.txt
+        cp2-reword.txt
+        cp3-squash.txt
+        cp4-reordenar.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git log oneline
+fatal: argumento ambiguo 'oneline': revisión desconocida o ruta fuera del árbol de trabajo.
+Usa '--' para separar las rutas de las revisiones, de esta manera:
+'git <comando> [<revisión>...] -- [<archivo>...]'
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git log --online
+fatal: argumento no reconocido: --online
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git log --online
+fatal: argumento no reconocido: --online
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git status
+git log --oneline
+En la rama main
+Tu rama está adelantada a 'origin/main' por 3 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        cp1-historial-original.txt
+        cp2-reword.txt
+        cp3-squash.txt
+        cp4-reordenar.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+6108234 (HEAD -> main) o
+3b346de Agrupa cambios de líneas extra en app
+3e0f168 Commit 1: versión inicial
+7b89b46 (origin/main, origin/HEAD) add deadline
+bb807e3 Initial commit
+
+
+El comando `git rebase --abort` se utiliza para cancelar un rebase en curso y volver al estado anterior del repositorio.
+
+Es útil cuando ocurre un conflicto que no queremos resolver o cuando nos damos cuenta de que hemos cometido un error durante el rebase interactivo.

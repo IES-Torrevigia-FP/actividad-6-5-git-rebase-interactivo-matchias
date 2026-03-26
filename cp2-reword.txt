@@ -1,0 +1,8 @@
+2c8c3e3 (HEAD -> main) Añade línea extra 3 en app
+db929d5 Añade línea extra 2 en app
+20af397 Añade línea extra 1 en app
+3e0f168 Commit 1: versión inicial
+7b89b46 (origin/main, origin/HEAD) add deadline
+bb807e3 Initial commit
+
+El comando reword en un rebase interactivo que permite modificar el mensaje de un commit sin cambiar su contenido. Git se detiene en ese commit y va abreindo el editor cada vez que lo cerramos para que podamos escribir un mensaje más claro y descriptivo. Es útil para mejorar la calidad del historial antes de compartirlo.

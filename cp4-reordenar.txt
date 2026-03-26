@@ -1,0 +1,14 @@
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git log --oneline
+3b346de (HEAD -> main) Agrupa cambios de líneas extra en app
+3e0f168 Commit 1: versión inicial
+7b89b46 (origin/main, origin/HEAD) add deadline
+bb807e3 Initial commit
+
+mathias@mathias-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-matchias$ git log --oneline
+3b346de (HEAD -> main) Agrupa cambios de líneas extra en app
+3e0f168 Commit 1: versión inicial
+7b89b46 (origin/main, origin/HEAD) add deadline
+bb807e3 Initial commi
+Reordenar commits permite organizar el historial de forma más lógica, por ejemplo, colocando primero un commit que introduce una funcionalidad y después otro que la mejora o corrige.
+
+Esto facilita la comprensión del proyecto para otros desarrolladores y hace que el historial sea más claro y coherente.
